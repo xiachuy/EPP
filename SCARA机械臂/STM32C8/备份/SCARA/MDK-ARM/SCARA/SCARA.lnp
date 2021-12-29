@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"scara\motor.o"
+"scara\robot.o"
+"scara\main.o"
+"scara\gpio.o"
+"scara\tim.o"
+"scara\stm32f1xx_it.o"
+"scara\stm32f1xx_hal_msp.o"
+"scara\stm32f1xx_hal_gpio_ex.o"
+"scara\stm32f1xx_hal_tim.o"
+"scara\stm32f1xx_hal_tim_ex.o"
+"scara\stm32f1xx_hal.o"
+"scara\stm32f1xx_hal_rcc.o"
+"scara\stm32f1xx_hal_rcc_ex.o"
+"scara\stm32f1xx_hal_gpio.o"
+"scara\stm32f1xx_hal_dma.o"
+"scara\stm32f1xx_hal_cortex.o"
+"scara\stm32f1xx_hal_pwr.o"
+"scara\stm32f1xx_hal_flash.o"
+"scara\stm32f1xx_hal_flash_ex.o"
+"scara\stm32f1xx_hal_exti.o"
+"scara\startup_stm32f103xe.o"
+"scara\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SCARA\SCARA.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SCARA.map" -o SCARA\SCARA.axf
